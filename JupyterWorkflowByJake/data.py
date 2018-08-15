@@ -1,4 +1,5 @@
 import os
+#Python 3
 from urllib.request import urlretrieve
 
 import pandas as pd
@@ -8,7 +9,7 @@ FREMONT_URL = 'https://data.seattle.gov/api/views/65db-xm6k/rows.csv?accessType=
 
 def get_fremont_data(filename='Fremont.csv', url=FREMONT_URL,
                      force_download=False):
-    """Download and cache the fremont data
+    """Download the Fremont data from API
 
     Parameters
     ----------
